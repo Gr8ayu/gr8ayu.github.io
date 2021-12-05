@@ -11,26 +11,24 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Gr8ayu",
+  title: "Hi all, I'm Ayush",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with Python / Django and some other cool libraries and frameworks. I am also learning DevOps and work with AWS."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/gr8ayu",
+  linkedin: "https://www.linkedin.com/in/gr8ayu/",
+  gmail: "anonymouskmr@gmail.com",
+  medium: "https://medium.com/@gr8ayu",
+  stackoverflow: "https://stackoverflow.com/users/8256944/gr8ayu",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -40,14 +38,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "Full stack developer, learning and exploring various domains of tech and life.",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop fully functional backend design using Django/Flask."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Building CI CD pipelines."),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Documenting and debugging of some big projects."
     )
   ],
 
@@ -64,29 +62,16 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "git",
+      fontAwesomeClassname: "fab fa-git-alt"
     },
+    
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
+  
+    
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
@@ -117,23 +102,23 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "RV College of Engineering",
+      logo: require("./assets/images/rvceLogo.png"),
+      subHeader: "BE in Information Science",
+      duration: "August 2018 - August 2022",
+      desc: "Took course on Operating systems, Software Engg, CyberSecurity...",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Hold the position of President for College Coding Club.",
+        "Technical head of Entrepreneurship Club."
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "DAV Hehal",
+      logo: require("./assets/images/davLogo.png"),
+      subHeader: "Secondary & Higher Secondary",
+      duration: "2003 - March 2017",
+      desc: "",
+      descBullets: ["10th : 10 CGPA", "12th : 8.74 %"]
     }
   ]
 };
@@ -141,7 +126,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -159,35 +144,284 @@ const techStack = {
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
+const skillSet = {
+  viewSkillSets: true, //Set it to true to show SkillSet Section
+  title: "Skills",
+  subTitle: "",
+
+  skills :[
+    {
+      category : "Languages",
+      skills : [{
+        name : "Python",
+        image : require("./assets/images/python.png"),
+
+      },
+      {
+        name : "Java",
+        image : require("./assets/images/java.png"),
+      },
+      {
+        name : "C++",
+        image : require("./assets/images/cpp.png"),
+      },
+    ]
+    },
+    {
+      category : "DevOps",
+      // "Docker", "Git","Github", "Github Actions", "Terraform"
+      skills: [
+        {
+          name: "Docker",
+          image: require("./assets/images/docker.jpeg"),
+        },
+        {
+          name: "Git",
+          image: require("./assets/images/git.png"),
+        },
+        {
+          name: "Github",
+          image: require("./assets/images/github.png"),
+        },
+        {
+          name: "Github Actions",
+          image: require("./assets/images/github-actions.png"),
+        },
+        {
+          name: "Terraform",
+          image: require("./assets/images/terraform.png"),
+        },
+      ]
+    },
+    {
+      category : "Backend",
+      // "Django", "Flask", "Firebase", "Nginx", "MySQL"
+      skills: [
+
+        {
+          name: "Django",
+          image: require("./assets/images/django.jpeg"),
+        },
+        {
+          name: "Flask",
+          image: require("./assets/images/flask.png"),
+        },
+        {
+          name: "Firebase",
+          image: require("./assets/images/firebase.png"),
+        },
+        {
+          name: "Nginx",
+          image: require("./assets/images/nginx.png"),
+        },
+        {
+          name: "MySQL",
+          image: require("./assets/images/mysql.png"),
+        },
+
+      ]
+    },
+    {
+      category : "Frontend",
+      // "React", "Redux" , "HTML", "CSS", "JavaScript", "Bootstrap"
+      skills: [
+        {
+          name: "React",
+          image: require("./assets/images/react.png"),
+        },
+        {
+          name: "Redux",
+          image: require("./assets/images/redux.png"),
+        },
+        {
+          name: "HTML",
+          image: require("./assets/images/html.png"),
+        },
+        {
+          name: "CSS",
+          image: require("./assets/images/css.png"),
+        },
+        {
+          name: "JavaScript",
+          image: require("./assets/images/javascript.png"),
+        },
+        {
+          name: "Bootstrap",
+          image: require("./assets/images/bootstrap.png"),
+        },
+
+      ]
+    },
+    {
+      category : "Data Science",
+      // "Pandas", "Numpy", "Scikit-Learn", "Matplotlib", "Seaborn", "Keras"
+      skills : [
+        {
+          name : "Pandas",
+          image : require("./assets/images/pandas.png"),
+        },
+        {
+          name : "Numpy",
+          image : require("./assets/images/numpy.png"),
+        },
+        {
+          name : "Scikit-Learn",
+          image : require("./assets/images/sklearn.jpeg"),
+        },
+        {
+          name : "Matplotlib",
+          image : require("./assets/images/matplotlib.png"),
+        },
+        {
+          name : "Seaborn",
+          image : require("./assets/images/seaborn.jpeg"),
+        },
+        {
+          name : "Keras",
+          image : require("./assets/images/keras.png"),
+        },
+
+      ]
+    },
+    {
+      category : "Cloud",
+      // "AWS", "GCP", "Azure"
+      skills : [
+        {
+          name : "AWS",
+          image : require("./assets/images/aws.png"),
+        },
+        {
+          name : "GCP",
+          image : require("./assets/images/gcp.png"),
+        },
+        {
+          name : "Azure",
+          image : require("./assets/images/azure.jpeg"),
+        },
+
+      ]
+    },
+    {
+      category : "Others",
+      // "Linux", "Celery", "RabbitMQ", "Photoshop" 
+      skills : [
+        {
+          name : "Linux",
+          image : require("./assets/images/linux.png"),
+        },
+        {
+          name : "Celery",
+          image : require("./assets/images/celery.png"),
+        },
+        {
+          name : "RabbitMQ",
+          image : require("./assets/images/rabbitmq.png"),
+        },
+        {
+          name : "Photoshop",
+          image : require("./assets/images/photoshop.png"),
+        },
+
+      ]
+    }
+  
+  ]
+}
+
+const testimonials = {
+  viewTestimonials: true, //Set it to true to show Testimonials Section
+  testimonials: [
+    {
+      title: "Ayush",
+      company: "InterviewVector",
+      text: "lorem ipsum...",
+    }
+  ]
+}
+
 // Work experience section
 
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Backend Developer Intern",
+      company: "InterviewVector",
+      companylogo: require("./assets/images/ivlogo.jpeg"),
+      date: "Aug 2021 – Present",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Working on feature development of the ﬂask server",
+        "Implemented monitoring and logging of error.",
+        "Preparing documentation and apidocs using swagger..",
+        "Preparing test suites for server using pytest.",
+        "Responsible for debugging of existing product in development.",
+        "Designing & Implementation of git workﬂow and CI CD pipeline on github action and AWS.",
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Backend Developer Intern",
+      company: "SAP Labs",
+      companylogo: require("./assets/images/saplogo.png"),
+      date: "June 2021 – August 2021",
+      desc: "",
+      descBullets: [
+        "Working on Outlook add-in for SAP ByDesign CRM Team.",
+        "Responsible for debugging of existing product in development.",
+        "Preparing documentations for the product."
+      ]
     },
     {
       role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      company: "Oxen Farm Solutions Pvt. Ltd.",
+      companylogo: require("./assets/images/oxenlogo.jpeg"),
+      date: "Mar 2021 – Apr 2021",
+      desc: "",
+      descBullets: [
+        "Creating automated scripts to scrape data from data source using selenium.",
+        "Setting up cloud server to perform periodic automated tasks on AWS.",
+        "Building internal web app for faster processing and analysis of data."
+      ]
+    },
+    {
+      role: "Software Engineer Intern",
+      company: "Maesh Singapore Pvt. Ltd.",
+      companylogo: require("./assets/images/maeshlogo.png"),
+      date: "Nov 2020 – Dec 2020",
+      desc: "",
+      descBullets: [
+        "Feature Development on Django for automated report generation and email alert using crontabs",
+        "Built fully automated CI/CD pipelines on Microsoft Azure for containerized applications using Docker.",
+        "Integrated pytest for integration testing."
+      ]
+
+    },
+    
+    {
+      role: "President",
+      company: "Coding Club RVCE",
+      companylogo: require("./assets/images/cclogo.png"),
+      date: "Sept 2018 – Present",
+      desc: "",
+      descBullets: [
+        "Organised 20 events, workshops, seminars and hackathons",
+        "Proposed various marketing and network activities to raise awareness",
+        "Building network on and oﬀ campus."
+      ]
+    }
+    ,
+    {
+      role: "Design & Tech Head",
+      company: "E-Cell RVCE",
+      companylogo: require("./assets/images/ecelllogo.png"),
+      date: "Sept 2018 – Present",
+      desc: "",
+      descBullets: [
+        "Responsible for managing the website and technical responsibilities.",
+        "Designed posters, Banners, graphics for both print and digital platforms."
+      ]
+
     }
   ]
 };
@@ -204,28 +438,28 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/wirin_thumbnail.png"),
+      projectName: "Wirin Project",
+      projectDesc: "Migrating Full Fledge Desktop Based Scenario Editor to Web Platform",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "More Details",
+          url: "https://docs.google.com/presentation/d/1p3TaTkKFrdb4JAljTNCr1JpCQRUg9yGF/edit?usp=sharing&ouid=112426150733350091604&rtpof=true&sd=true"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/spcportal_thumbnail.png"),
+      projectName: "SPCPortal",
+      projectDesc: "Web platform for training and placement cell to manage Placements and Internships", 
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "More Details",
+          url: "https://github.com/Gr8ayu/SPCPortal"
         }
       ]
     }
@@ -288,7 +522,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -298,38 +532,59 @@ const blogSection = {
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
+  // blogs: [
+  //   {
+  //     url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
+  //     title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+  //     description:
+  //       "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+  //   },
+  //   {
+  //     url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
+  //     title: "Why REACT is The Best?",
+  //     description:
+  //       "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+  //   }
+  // ],
   display: true // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
+  title: "Events Organised",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "I love to organise fun events 😅"
   ),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
+      title: "Finding Sherlock",
+      subtitle: "CTF Contest for the college during Technical Fest '8th Miles' 2019",
+      slides_url: "https://www.instagram.com/tv/B86BXLuDEGg/",
+      event_url: "https://relayhack.herokuapp.com/"
+    },
+    {
+      title: "The Amazing Race",
+      subtitle: "Treasure Hunt like coding contest, to solve the questions to get the clues and win the race",
+      slides_url: "https://www.instagram.com/p/B7lqZYiDP2Y/",
+      event_url: ""
+    },
+    {
+      title: "Comprehensive Placement Preparation",
+      subtitle: "Workshop on preparation for placements for college students",
+      slides_url: "https://www.instagram.com/p/CNw1u-HDLxv/",
+      event_url: ""
+    },
+   
+    {
+      title: "Indian Police Hackathon",
+      subtitle: "National level hackathon organised with Karnataka Police ",
+      slides_url: "https://www.instagram.com/p/B4X3uLBDrMV/",
+      event_url: ""
+    },
+   
+    
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -344,22 +599,22 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-3243454077",
-  email_address: "saadpasta70@gmail.com"
+  number: "+91-9122371740",
+  email_address: "anonymouskmr@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 export {
@@ -377,5 +632,6 @@ export {
   talkSection,
   podcastSection,
   contactInfo,
-  twitterDetails
+  twitterDetails,
+  skillSet
 };
